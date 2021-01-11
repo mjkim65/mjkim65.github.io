@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+  .nyc{
+    color:rgba(100,1,100, 0.5); /*(red,green,blue,opacity(transparency)*/
+    background-color:yellow;
+    font-size: 30px;
+    font-family: courier;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border: 2px solid red;
+    box-shadow: 10px 5px 10px purple;/*(How far shadow stays away from the border, left or right,
+     how far shadow stays up and down, how blurry it is, color )*/
+    width: 400px;
+    height: 60px;
+    text-shadow: 10px 5px 10px purple;
+  }
+
+  .img1{
+    width: 60%;
+    box-shadow: 10px 5px 10px purple;
+    border: 2px solid red;
+    border-radius: 10px;
+    filter:grayscale(10);
+
+  }
+  .img2{
+    width: 60%;
+    box-shadow: 10px 5px 10px purple;
+    border: 2px solid orange;
+    border-radius: 10px;
+
+  }
+
+  .block{
+    border: 3px solid blue;
+    width: 62%;
+    height: 200px;
+    margin: 4%;
+
+  }
+
+  .block1{
+
+    height: 80%;
+    float: left;
+    margin: 4%;
+  }
+
+  .block2{
+
+    height: 80%;
+    float: left;
+    margin: 4%;
+  }
+
+  .block3{
+
+    height: 80%;
+    float: left;
+    margin: 4%;
+  }
+
+</style>
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <center><p class="nyc">New York City</p></center>
+      <br>
+
+      <center><div class="block">
+
+        <div class="block1">
+          <img src="nyc.jpg" alt="NYC" class ="img1">
+        </div>
+
+        <div class="block2">
+          <a href="https://google.com">Link to Google</a><br><br>
+          <button type="button" name="button">Click me</button><br>
+          <p>Some Text</p>
+        </div>
+
+        <div class="block3">
+          <img src="nyc.jpg" alt="NYC" class ="img2">
+        </div>
+
+      </div></center>
+  </body>
+</html>
