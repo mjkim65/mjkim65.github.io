@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+  .clock{
+    position:relative;
+  }
+  .shorthand img{
+    position:absolute;
+    margin-top: 21.0%;
+    margin-left: 24.2%;
+    width: 14%;
+    transform-origin: left;
+    animation: hour 5s
+
+
+  }
+ .longhand img{
+    position: absolute;
+    margin-top: 20.3%;
+    margin-left:24.5%;
+    width: 17.5%;
+    transform-origin: left;
+    animation: minute 5s;
+  }
+
+  @keyframes minute {
+    from{transform: rotate(-90deg);}
+    to{transform: rotate(270deg);}
+  }
+  @keyframes hour {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(30deg);}
+  }
+
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="shorthand">
+      <img src="hand.png" alt="">
+    </div>
+
+    <div class="longhand">
+      <img src="hand.png" alt="">
+    </div>
+
+    <div class="clock">
+      <img src="clockimage.png" alt="" width="50%">
+    </div>
+
+    </div>
+  </body>
+</html>
