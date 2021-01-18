@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+  .click{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .click1{
+    background-color: purple;
+    color: lightblue;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .msgblock{
+    position: relative;
+    width: 60%;
+    background-color: orange;
+    border: 2px solid black;
+    margin-top: 10%;
+  }
+  .msgblock img{
+    width: 50%;
+  }
+  .modelwindow{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(30, 86, 124, 0.5);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modelwindow:target{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sub1{
+    border: 2px solid red;
+    width: 40%;
+    padding-bottom: 5%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 2%;
+  }
+  .sub1 img{
+    padding-top: 17%
+  }
+  .sub2{
+    border: 2px solid red;
+    width: 40%;
+    padding-bottom: 5%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 5%;
+  }
+  .sub2 img{
+    padding-top: 17%;
+  }
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="mainwindow">
+      <center><div class="sub1">
+        <img src="nyc.jpg" width="67%"><br><br><br><br>
+        <a href="#open" class="click">Open Modal Window</a>
+      </div>
+
+      <div class="sub2">
+        <img src="clockimage.png" width="50%"><br><br><br><br>
+        <a href="#open2" class ="click"> Open Modal Window 2</a>
+      </div>
+    </div></center>
+
+    <div id="open" class="modelwindow">
+      <center><div class="msgblock">
+        <h1 style ="color:white">Modal Window Example</h1>
+        <p>This is a paragraph in the message window.
+           This is a paragraph in the message window.
+           This is a paragraph in the message window.</p>
+        <img src="nyc.jpg" alt="">
+        <a href="#" class="click1">Close</a>
+      </div></center>
+    </div>
+
+    <div id="open2" class="modelwindow">
+      <center><div class="msgblock">
+        <h1>Picture of an Apple</h1>
+        <p>This is an Apple</p>
+        <img src="apple.jpg" alt="">
+        <br>
+        <a href="#">Close</a>
+      </div></center>
+    </div>
+
+  </body>
+</html>
