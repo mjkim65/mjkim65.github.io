@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+.FirstPage{
+  width: 100%;
+  float:left;
+}
+.SecondPage{
+  width: 100%;
+  float: left;
+}
+.ThirdPage{
+  width: 100%;
+  float: left;
+}
+.FourthPage{
+  width: 100%;
+  float: left;
+  margin-top: 10%;
+}
+.FifthPage{
+  width: 100%;
+  float: left;
+  margin-top: 10%;
+  background-color: black;
+  color: white;
+}
+.logo{
+  width: 100%;
+}
+.lotion{
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.lotion1{
+  width: 30%;
+  text-align: center;
+  float: left;
+  margin-left: 2%;
+}
+.pink{
+  width: 100%;
+}
+.red{
+  width: 100%;
+}
+.white{
+  width: 100%;
+}
+.text1{
+  color: green;
+  font-size: 70%;
+  margin-top: 25%;
+}
+.text2{
+  font-size: 75%;
+}
+.button{
+  padding: 2%;
+  background-color: black;
+  color: white;
+  font-size: 60%;
+  font-family:serif;
+}
+.button:hover{
+  background-color: lightgrey;
+  color: black;
+
+}
+.button2{
+  padding: 1%;
+  background-color: white;
+  color: black;
+  font-family: cursive;
+  font-size: 60%;
+}
+.modalwindow{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: rgba(30, 86, 124, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+.modalwindow:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+.msgblock{
+  position: relative;
+  width: 40%;
+  height: 80%;
+  background-color: white;
+  margin: auto;
+  margin-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.subblock{
+  width: 50%;
+  height:50%;
+  float: left;
+}
+.subtext{
+  width: 40%;
+  height: 50%;
+  float: left;
+}
+.footnote{
+  width: 100%;
+  height: 15%;
+  float: left;
+  padding-bottom: 6%;
+  background-color: lightgrey;
+}
+.footer {
+  margin-top: 10%;
+  background-color: black;
+}
+.help{
+  text-align: center;
+}
+.subhelp{
+  width: 20%;
+  float: left;
+  margin-left: 3%;
+}
+.SocialMedia{
+  float: right;
+}
+.SocialMediaIcons img{
+  width: 8%;
+  float: left;
+  margin-left: 6%;
+}
+.FirstPageHeadPic{
+  width: 100%;
+}
+.FirstPageHeadSub{
+  width: 15%;
+  float:left;
+}
+.FirstPageHeadSub1{
+  margin-left: 5%;
+  width: 79%;
+  float: left;
+}
+.FirstPageHeadText{
+  margin-top: 4%;
+  font-size: 200%;
+  color: green;
+}
+.FirstPageAnimation{
+  margin-top: 3%;
+  width: 200%;
+  float:left;
+  animation: ShiftLeft 15s infinite;
+  overflow: hidden;
+  animation-delay: 3s;
+}
+.FirstPartAnimation{
+  float: left;
+  width: 50%;
+  text-align: center;
+  background-color: yellow;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+}
+.SecondPartAnimation{
+  width: 50%;
+  float: right;
+  background-color: green;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+  text-align: center;
+}
+@keyframes ShiftLeft {
+  0%{margin-left: 0%;}
+  50%{margin-left: -100%;}
+}
+.FirstPageMain img{
+  width: 100%;
+  height: 600px;
+}
+.FirstPageMain{
+  width: 100%;
+  position: relative;
+}
+.FirstPageMainText1{
+  width: 20%;
+  top: 53%;
+  left: 8%;
+  position: absolute;
+  border: 5px solid white;
+  background-color: lightgrey;
+  font-size: 100%;
+  padding: 2%;
+}
+.SecondPagePic1{
+  width: 40%;
+  position: relative;
+  float: left;
+}
+.SecondPagePic1 img{
+  width: 100%;
+}
+.SecondPagePic1Text{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  padding: 3%;
+  width:50%;
+  color: white;
+  font-size: 100%;
+  border: 2px solid yellow;
+}
+.SecondPageContainer{
+  margin-top: 10%;
+  margin-left: 5%;
+  opacity: 0.7;
+}
+.SecondPagePic2{
+  float: left;
+  width: 30%;
+  background-color: lightgrey;
+  color: green;
+  margin-left: 13%;
+  padding: 3%;
+  font-size: 100%;
+  padding-bottom: 12%;
+  margin-bottom: 1%;
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color:lightyellow">
+<!------------------------------FIRST PAGE---------------------------------->
+
+<div class="FirstPage">
+
+  <div class="FirstPageHead">
+    <div class="FirstPageHeadSub">
+    <img src="images/icons/logo.png" class="FirstPageHeadPic">
+    </div>
+    <div class="FirstPageHeadSub1">
+      <p class="FirstPageHeadText">Josefina Body Care Collection</p>
+      <p><b>Discover the exotic sensation of all seasons</b></p>
+    </div>
+  </div>
+
+  <div class="FirstPageAnimation">
+    <div class="FirstPartAnimation">
+    <p>Today Only! <b>$5.99 INTO THE NIGHT BODY CARE</b>&nbsp&nbsp
+       <i>Code: STARRYNIGHT</i></p>
+    </div>
+    <div class="SecondPartAnimation">
+      <p>SomeText! <b>I FORGOT WHAT THIS PART SAYS</b>&nbsp&nbsp
+         <i>Some Random Text</i></p>
+    </div>
+  </div>
+
+  <div class="FirstPageMain">
+    <img src="images/icons/intro_img2.jpg" class="introPic">
+    <div class="FirstPageMainText">
+      <p class="FirstPageMainText1">A 100% naural, unique dry oil that nourishes
+       the skin.<br>
+      Enriched enriching with nourishing herbs, specifically put
+      together according to the Ayurvedic traiditon for the Vata Dosha.<br>
+      With nourishing sweet almond oil and basil."</p>
+    </div>
+  </div>
+
+</div>
+<!-----------------------------------END---------------------------------->
+
+<div class="SecondPage">
+
+  <div class="SecondPageContainer">
+    <div class="SecondPagePic1">
+      <img src="images/icons/intro_img1.jpg" alt="">
+      <div class=>
+        <p class="SecondPagePic1Text">Unique blend containing
+        antioxidants, vitamin E and the ingredients Centella asiatica</p>
+      </div>
+    </div>
+    <div class="SecondPagePic2">
+      <p class="SecondPagePic2Text"><b>Strengthen Your Skin</b>
+      <br><br> Special Technology makes this whipped cream easy
+      to apply while its rich and velvety formulation nourishes your skin.
+      <br><br>Enriched with nourishing rice milk and a flowery fragrance
+      of cherry blossom.</p>
+    </div>
+  </div>
+</div>
+
+<!--------------------------Third PAGE----------------------------------->
+<div class="ThirdPage">
+    <h2>&nbsp&nbsp&nbsp&nbspJosefina Body Lotion</h2>
+    <hr>
+    <div class="lotion">
+
+      <div class="sub1 lotion1">
+        <img src="images/icons/item1.png" class="pink">
+        <b><p class="text1">RITUAL OF SAKURA</p></b>
+        <h4>Cherry Blossom Hand Lotion</h4>
+        <p class="text2">Body lotion, 70ml</p>
+        <p>$12.50</p>
+        <a href="#open1"><button type="button" name="button" class="button"
+           title="Add the Shopping Cart"> ADD TO BAG</button></a>
+      </div>
+      <div class="sub2 lotion1">
+        <img src="images/icons/item2.png" class="red">
+        <b><p class="text1">THE RITUAL OF AYURVEDA</p></b>
+        <h4>Himalaya Honey body cream</h4>
+        <p class="text2">Body cream, 70ml</p>
+        <p>$7.50</p>
+        <a href="#open2"><button type="button" name="button" class="button"
+         title="Add the Shopping Cart">ADD TO BAG</button></a>
+      </div>
+      <div class="sub3 lotion1">
+        <img src="images/icons/item3.png" class="white">
+        <b><p class="text1">THE RITUAL OF SAKURA</p></b>
+        <h4>Organic rice milk body cream</h4>
+        <p class="text2">Body cream, 70ml</p>
+        <p>$7.50</p>
+        <a href="#open3"><button type="button" name="button" class="button"
+          title="Add the Shopping Cart">ADD TO BAG</button></a>
+      </div>
+
+    </div>
+
+    <div id=open1 class="modalwindow">
+
+      <div class="msgblock">
+
+        <br>
+        <p>&nbsp&nbspIT'S IN THE BAG!</p>
+        <hr><br>
+
+        <div class="subblock">
+          <img src="images/icons/item1.png" class="pink">
+        </div>
+        <div class="subtext">
+          <b><p class="text1">RITUAL OF SAKURA</p></b>
+          <h4>Cherry Blossom Hand Lotion</h4>
+          <p class="text2">Body lotion, 70ml</p>
+          <p>$12.50</p>
+          <p>Mix & Match: 3/$33</p>
+        </div>
+        <div class="footnote">
+          <p>Nature and comfort skin from top to toe with The Ritual of
+          Sakura Body Cream from Rituals.</p>
+          <hr>
+          <a href="#"><button type="button" name="button" class="button2">
+          CONTINUE SHOPPING</button></a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id=open2 class="modalwindow">
+
+      <div class="msgblock">
+
+        <br>
+        <p>&nbsp&nbspIT'S IN THE BAG!</p>
+        <hr><br>
+
+        <div class="subblock">
+          <img src="images/icons/item2.png" class="red">
+        </div>
+        <div class="subtext">
+          <b><p class="text1">THE RITUAL OF AYURVEDA</p></b>
+          <h4>Himalaya Honey body cream</h4>
+          <p class="text2">Body cream, 70ml</p>
+          <p>$7.50</p>
+          <p>Mix & Match: 3/$20</p>
+        </div>
+        <div class="footnote">
+          <p>Harmonise body, mind & soul with this luxariousbody cream
+          from The Ritual of Ayurveda.</p>
+          <hr>
+          <a href="#"><button type="button" name="button" class="button2">
+          CONTINUE SHOPPING</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div id=open3 class="modalwindow">
+
+      <div class="msgblock">
+
+        <br>
+        <p>&nbsp&nbspIT'S IN THE BAG!</p>
+        <hr><br>
+
+        <div class="subblock">
+          <img src="images/icons/item3.png" class="white">
+        </div>
+        <div class="subtext">
+          <b><p class="text1">THE RITUAL OF SAKURA</p></b>
+          <h4>Organic rice milk body cream</h4>
+          <p class="text2">Body cream, 70ml</p>
+          <p>$7.50</p>
+          <p>Mix & Match: 3/$20</p>
+        </div>
+        <div class="footnote">
+          <p>Featuring special technology that makes this velvety rich cream
+          easy to apply, it intensely nourishes and firms the skin.</p>
+          <hr>
+          <a href="#"><button type="button" name="button" class="button2">
+          CONTINUE SHOPPING</button></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-----------------------------END------------------------------------>
+
+<!---------------------------Fourth PAGE------------------------------->
+<div class="FourthPage">
+<h2>&nbsp&nbsp&nbsp&nbspJosefina Gift Sets</h2>
+<hr>
+<div class="lotion">
+
+  <div class="sub1 lotion1">
+    <img src="images/icons/gift_set1.png" class="pink">
+    <b><p class="text1">RITUAL OF AYURVEDA</p></b>
+    <h4>Rebalancing Ritual Gift Set</h4>
+    <p class="text2">Foaming shower gel 200ml, body scrub 125g,
+    body cream 70ml, hand soap 300ml</p>
+    <p>$37.50</p>
+    <a href="#open11"><button type="button" name="button" class="button"
+       title="Add the Shopping Cart"> ADD TO BAG</button></a>
+  </div>
+  <div class="sub2 lotion1">
+    <img src="images/icons/gift_set2.png" class="red">
+    <b><p class="text1">THE RITUAL OF AYURVEDA</p></b>
+    <h4>Himalaya Honey body cream</h4>
+    <p class="text2">Foaming shower gel 50ml, body scrub 50g,
+    body cream 70ml, hand soap 110ml</p>
+    <p>$26.00</p>
+    <a href="#open22"><button type="button" name="button" class="button"
+     title="Add the Shopping Cart">ADD TO BAG</button></a>
+  </div>
+  <div class="sub3 lotion1">
+    <img src="images/icons/gift_set3.png" class="white">
+    <b><p class="text1">THE RITUAL OF SAKURA</p></b>
+    <h4>Organic rice milk body cream</h4>
+    <p class="text2">Foaming shower gel 200ml, body scrub 125g,
+    body cream 70ml, hand soap 300ml</p>
+    <p>$37.50</p>
+    <a href="#open33"><button type="button" name="button" class="button"
+      title="Add the Shopping Cart">ADD TO BAG</button></a>
+  </div>
+
+</div>
+
+<div id=open11 class="modalwindow">
+
+  <div class="msgblock">
+
+    <br>
+    <p>&nbsp&nbspIT'S IN THE BAG!</p>
+    <hr><br>
+
+    <div class="subblock">
+      <img src="images/icons/gift_set1.png" class="pink">
+    </div>
+    <div class="subtext">
+      <b><p class="text1">RITUAL OF AYURVEDA</p></b>
+      <h4>Rebalancing Ritual Gift Set</h4>
+      <p class="text2">Foaming shower gel 200ml, body scrub 125g,
+      body cream 70ml, hand soap 300ml</p>
+      <p>$37.50</p>
+    </div>
+    <div class="footnote">
+      <p>This wonderful gift pack is the perfect present for a friend or
+        family member or for treating yourself! Achieve inner harmony with
+        these soothing and aromatic products based on Indian Rose and Sweet
+         Almond Oil. Give the gift box a second lease of life by keeping
+         photographs, letters, or other items in it.</p>
+      <hr>
+      <a href="#"><button type="button" name="button" class="button2">
+      CONTINUE SHOPPING</button></a>
+    </div>
+
+  </div>
+
+</div>
+
+<div id=open22 class="modalwindow">
+
+  <div class="msgblock">
+
+    <br>
+    <p>&nbsp&nbspIT'S IN THE BAG!</p>
+    <hr><br>
+
+    <div class="subblock">
+      <img src="images/icons/gift_set2.png" class="red">
+    </div>
+    <div class="subtext">
+      <b><p class="text1">THE RITUAL OF AYURVEDA</p></b>
+      <h4>Himalaya Honey body cream</h4>
+      <p class="text2">Foaming shower gel 50ml, body scrub 50g,
+      body cream 70ml, hand soap 110ml</p>
+    </div>
+    <div class="footnote">
+      <p>This wonderful gift pack is the perfect present for a friend or family
+         member or for treating yourself! Celebrate each day as a new beginning
+         with these care products based on the fabulous aromas of Cherry Blossom
+         and Rice Milk. Free re-usable luxury storage box.
+</p>
+      <hr>
+      <a href="#"><button type="button" name="button" class="button2">
+      CONTINUE SHOPPING</button></a>
+    </div>
+  </div>
+</div>
+
+<div id=open33 class="modalwindow">
+
+  <div class="msgblock">
+
+    <br>
+    <p>&nbsp&nbspIT'S IN THE BAG!</p>
+    <hr><br>
+
+    <div class="subblock">
+      <img src="images/icons/gift_set3.png" class="white">
+    </div>
+    <div class="subtext">
+      <b><p class="text1">THE RITUAL OF SAKURA</p></b>
+      <h4>Organic rice milk body cream</h4>
+      <p class="text2">Foaming shower gel 200ml, body scrub 125g,
+      body cream 70ml, hand soap 300ml</p>
+      <p>$37.50</p>
+    </div>
+    <div class="footnote">
+      <p>This wonderful gift pack is the perfect present for a friend or family
+        member or for treating yourself! Experience the ultimate summer
+      sensation with these soothing products based on the floral aroma of
+       Holy Lotus and Organic White Tea. Give the gift box a second lease
+       of life by keeping photographs, letters, or other items in it.
+        Free re-usable luxury storage box.</p>
+      <hr>
+      <a href="#"><button type="button" name="button" class="button2">
+      CONTINUE SHOPPING</button></a>
+    </div>
+  </div>
+</div>
+</div>
+<!--------------------------------END-------------------------------->
+<div class="FifthPage">
+
+
+
+  <div class="help">
+    <div class="subhelp">
+      <p><b>HELP</b><br><br>
+      Customer Service<br>
+      Live Chat</p>
+    </div>
+    <div class="subhelp">
+      <p><b>ACCOUNT</b><br><br>
+      Your Account<br>
+      Order Status</p>
+    </div>
+    <div class="subhelp">
+      <p><b>SUBSCRIBE</b><br><br>
+      Email<br>
+      Store Offer and Events</p>
+    </div>
+    <div class="subhelp">
+      <p><b>THE MEMBER CARD</b><br><br>
+      Learn More<br>
+      Pay My Bill</p><br>
+    </div>
+  </div>
+
+  <div class="SocialMedia">
+    <p>CONNECT WITH JOSEFINA BODY CARE COLLECTION</p>
+    <div class="SocialMediaIcons">
+      <a href="https://facebook.com"><img src="images/icons/facebook.png" alt=""></a>
+    </div>
+    <div class="SocialMediaIcons">
+      <a href="https://instagram.com"><img src="images/icons/instagram.png" alt=""></a>
+    </div>
+    <div class="SocialMediaIcons">
+      <a href="https://youtube.com"><img src="images/icons/youtube.png" alt=""></a>
+    </div>
+    <div class="SocialMediaIcons">
+      <a href="https://pinterest.com"><img src="images/icons/pin.png" alt=""></a>
+    </div>
+    <div class="SocialMediaIcons">
+      <a href="https://twitter.com"><img src="images/icons/twitter.png" alt=""></a>
+    </div>
+  </div>
+
+</div>
+  </body>
+</html>
