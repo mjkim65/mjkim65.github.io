@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+  .head {
+    width: 100%;
+    height: 100px;
+  }
+
+  .heading {
+    width: 85%;
+    float: left;
+  }
+
+  .playbutton {
+    float: right;
+    margin-right: 5%;
+    width: 5%;
+  }
+
+  .button {
+    padding: 40%;
+    border: 2px solid yellow;
+    background-color: lightblue;
+    color: white;
+  }
+
+  .button:hover {
+    background-color: blue;
+  }
+
+  .guesstext {
+    color: white;
+    font-size: 250%;
+    margin-top: 3%;
+  }
+
+  .numberdisplay {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    font-size: 550%;
+    box-shadow: 5px 4px 10px 3px purple;
+  }
+
+  .scoreboard {
+    width: 20%;
+    font-size: 120%;
+  }
+
+  .scoredisplay {
+    width: 100%;
+    height: 200px;
+    margin-top: 3%;
+  }
+
+  .scoreboard {
+    float: left;
+    margin-left: 25%;
+  }
+
+  .scorecheck {
+    float: left;
+    width: 20%;
+    margin-left: 20%;
+  }
+
+  .input {
+    background-color: lightpink;
+    border-style: hidden;
+    padding: 10%;
+    border: 10px solid white;
+    font-size: 300%;
+    width: 40%;
+  }
+
+  .guessnumber {
+    margin-left: 23%;
+  }
+
+  .checkbutton {
+    padding: 5%;
+    border: 2px solid black;
+    background-color: lightblue;
+    color: white;
+  }
+
+  .checkbutton:hover {
+    background-color: grey;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body style="background-color: lightpink">
+
+  <div class="head">
+    <div class="heading">
+      <p style="color: white">Guess the Number Between 1 and 100</p>
+    </div>
+    <div class="playbutton">
+      <button type="button" name="button" class="button">Play!</button>
+    </div>
+  </div>
+
+  <center>
+    <p class="guesstext">Guess My Number!</p>
+    <div class="numberdisplay">
+      <p>?</p>
+    </div>
+  </center>
+
+  <div class="scoredisplay">
+    <div class="scoreboard">
+      <p class="hint"></p><br>
+      <p class="score">Score:</p>
+      <p class="highscore">Highscore:</p>
+    </div>
+
+    <div class="scorecheck">
+      <div class="guessnumber">
+        <input type="text" class=input>
+      </div>
+      <div class="">
+        <br>
+        <center><button type="button" name="button" class="checkbutton">
+            Check!</button></center>
+      </div>
+    </div>
+  </div>
+  <script src=project3.js></script>
+</body>
+
+</html>
